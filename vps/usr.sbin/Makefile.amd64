@@ -1,0 +1,30 @@
+# $FreeBSD: projects/vps/usr.sbin/Makefile.amd64 257008 2013-10-23 19:02:26Z will $
+
+# kgzip: builds, but missing support files
+# mptable: broken (not 64 bit clean)
+# pnpinfo: crashes (not really useful anyway)
+.if ${MK_ACPI} != "no"
+SUBDIR+=	acpi
+.endif
+.if ${MK_APM} != "no"
+SUBDIR+=	apm
+.endif
+SUBDIR+=	asf
+SUBDIR+=	bhyve
+SUBDIR+=	bhyvectl
+SUBDIR+=	bhyveload
+SUBDIR+=	boot0cfg
+.if ${MK_TOOLCHAIN} != "no"
+SUBDIR+=	btxld
+.endif
+SUBDIR+=	cpucontrol
+SUBDIR+=	kgmon
+SUBDIR+=	lptcontrol
+SUBDIR+=	mount_smbfs
+SUBDIR+=	mptable
+.if ${MK_NDIS} != "no"
+SUBDIR+=	ndiscvt
+.endif
+SUBDIR+=	sicontrol
+SUBDIR+=	spkrtest
+SUBDIR+=	zzz

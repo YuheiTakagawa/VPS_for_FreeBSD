@@ -1,0 +1,26 @@
+# $FreeBSD: projects/vps/tools/regression/bin/sh/builtins/local3.0 257008 2013-10-23 19:02:26Z will $
+
+f() {
+	local "$@"
+	set -a
+	x=7
+	case $- in
+	*a*) : ;;
+	*) echo In-function \$- bad
+	esac
+	[ "$x" = 7 ] || echo In-function \$x bad
+}
+x=1
+case $- in
+*a*) echo Initial \$- bad
+esac
+f x -
+case $- in
+*a*) echo Intermediate \$- bad
+esac
+[ "$x" = 1 ] || echo Intermediate \$x bad
+f - x
+case $- in
+*a*) echo Final \$- bad
+esac
+[ "$x" = 1 ] || echo Final \$x bad

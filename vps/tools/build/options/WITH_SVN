@@ -1,0 +1,5 @@
+.\" $FreeBSD: projects/vps/tools/build/options/WITH_SVN 257008 2013-10-23 19:02:26Z will $
+Set to install
+.Xr svnlite 1
+as
+.Xr svn 1 .

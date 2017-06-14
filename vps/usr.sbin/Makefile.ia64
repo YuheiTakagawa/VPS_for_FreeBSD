@@ -1,0 +1,9 @@
+# $FreeBSD: projects/vps/usr.sbin/Makefile.ia64 257008 2013-10-23 19:02:26Z will $
+
+.if ${MK_ACPI} != "no"
+SUBDIR+=	acpi
+.endif
+SUBDIR+=	kgmon
+SUBDIR+=	mount_smbfs
+SUBDIR:=	${SUBDIR:Nuathload}
+SUBDIR+=	zzz
