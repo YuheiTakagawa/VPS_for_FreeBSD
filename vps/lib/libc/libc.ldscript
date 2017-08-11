@@ -1,2 +1,0 @@
-/* $FreeBSD: projects/vps/lib/libc/libc.ldscript 257008 2013-10-23 19:02:26Z will $ */
-GROUP ( @@SHLIB@@ @@LIBDIR@@/libssp_nonshared.a )

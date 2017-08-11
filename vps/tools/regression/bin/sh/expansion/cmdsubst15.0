@@ -1,5 +1,0 @@
-# $FreeBSD: projects/vps/tools/regression/bin/sh/expansion/cmdsubst15.0 245381 2013-01-13 19:19:40Z jilles $
-
-! v=`false;
-
-`

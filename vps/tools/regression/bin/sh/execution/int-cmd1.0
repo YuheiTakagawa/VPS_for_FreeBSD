@@ -1,3 +1,0 @@
-# $FreeBSD: projects/vps/tools/regression/bin/sh/execution/int-cmd1.0 257008 2013-10-23 19:02:26Z will $
-
-! echo echo bad | $SH -ic 'fi' 2>/dev/null

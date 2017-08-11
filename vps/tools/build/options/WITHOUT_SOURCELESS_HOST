@@ -1,2 +1,0 @@
-.\" $FreeBSD: projects/vps/tools/build/options/WITHOUT_SOURCELESS_HOST 230972 2012-02-04 00:54:43Z rmh $
-Set to not build kernel modules that include sourceless native code for host CPU.

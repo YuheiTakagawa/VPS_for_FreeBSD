@@ -1,7 +1,0 @@
-# $FreeBSD: projects/vps/sys/arm/broadcom/bcm2835/std.bcm2835 257008 2013-10-23 19:02:26Z will $
-
-machine	arm armv6
-cpu	CPU_ARM1176
-
-files	"../broadcom/bcm2835/files.bcm2835"
-

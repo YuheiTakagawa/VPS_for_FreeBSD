@@ -1,3 +1,0 @@
-# $FreeBSD: projects/vps/tools/regression/bin/sh/parser/only-redir1.0 210221 2010-07-18 12:45:31Z jilles $
-</dev/null &
-wait $!
